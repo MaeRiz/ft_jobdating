@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Dating</title>
+    <link type="text/css" rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <img id="logo" src="./static/imgs/LOGO-FRANCE-TRAVAIL.png" alt="Logo de France Travail Montluçon"/>
+    <h1 id='title'>Job dating</h1>
+    <img id="param" src="./static/icons/gear-solid.svg" alt="un triangle avec trois côtés égaux"/>
+    <div id="timer-container">
+        <h2 id="tour">Tour n°1</h2>
+        <h3 id="timer">02:00</h3>
+        <span id='change' class='hidden'>Changement</span>
+        <div id="control-timer-container">
+            <button id="start">Démarrer</button>
+            <button id="reset">Remettre a zéro</button>
+            <button id="pass">Passer</button>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <h3>Paramétres</h3>
+            <label for="titleinput">Titre</label>
+            <input type="text" id="titleinput" name="dating_time" placeholder='Job Dating' value="Job dating">
+            <label for="datingTime">Durée d'entretien (en secondes)</label>
+            <input type="number" id="datingTime" name="dating_time" placeholder='120 secondes par défaut' value='120'>
+            <label for="changingTime">Durée changement (en secondes)</label>
+            <input type="number" id="changingTime" name="changing_time" placeholder='30 secondes par défaut' value='30'>
+            <button id="save">Sauvegarder</button>
+        </div>
+      
+      </div>
+</body>
+<script type="text/javascript" language="javascript" src="./static/index.js"></script>
+</html>
