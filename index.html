@@ -16,8 +16,8 @@
         <span id='change' class='hidden'>Changement</span>
         <div id="control-timer-container">
             <button id="start">Démarrer</button>
-            <button id="reset">Remettre a zéro</button>
-            <button id="pass">Passer</button>
+            <button id="pass" class='hidden'>Suivant</button>
+            <button id="reset" class="hidden">Remettre à zéro</button>
         </div>
     </div>
 
@@ -26,7 +26,7 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span id="closeModal">&times;</span>
-            <h3>Paramétres</h3>
+            <h3 id="param-title">Paramétres</h3>
             <label for="titleinput">Titre</label>
             <input type="text" id="titleinput" name="dating_time" placeholder='Job Dating' value="Job dating">
             <label for="datingTime">Durée d'entretien (en secondes)</label>
